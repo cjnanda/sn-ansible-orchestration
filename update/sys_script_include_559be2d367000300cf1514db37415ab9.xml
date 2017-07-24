@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_sc_ansible.JobImport</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>JobImport</name>
+        <script><![CDATA[var JobImport = Class.create();
+JobImport.prototype = {
+	
+	_endpoint: null,
+	_server: null,
+    initialize: function(server, integration) {
+		this._server = server;
+		if(integration == undefined || integration == null)
+			integration = AnsibleIntegration.get();
+		
+		this._getEndpoint(integration);
+    },
+	
+	run: function(){
+		this._importProjects();
+	},
+	
+	_getEndpoint: function(integration){
+		var ep = integration.getEndpoint(AnsibleConstants.ENDPOINT_HOST);
+		if(ep == null)
+			throw '';
+		
+		this._endpoint = ep;
+	},
+	
+	_importProjects: function(){
+		var mess = new AMessage(this._server);	
+		mess.setResource(this._endpoint.uri);
+		var result = mess.execute();
+		if(result.success){
+			gs.debug("Import Success.");
+			
+			gs.debug(JSON.stringify(result.data));
+			
+		}else
+			throw 'Failed to import projects.';
+	},
+	
+	
+
+    type: 'JobImport'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-24 17:03:45</sys_created_on>
+        <sys_id>559be2d367000300cf1514db37415ab9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>JobImport</sys_name>
+        <sys_package display_value="Ansible Tower Integration" source="sn_sc_ansible">f41f2dc267000300cf1514db37415a45</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Ansible Tower Integration">f41f2dc267000300cf1514db37415a45</sys_scope>
+        <sys_update_name>sys_script_include_559be2d367000300cf1514db37415ab9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-24 17:03:45</sys_updated_on>
+    </sys_script_include>
+</record_update>

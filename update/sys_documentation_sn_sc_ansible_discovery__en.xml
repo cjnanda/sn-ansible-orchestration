@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="" label="Discovery" language="en" table="sn_sc_ansible_discovery">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Discovery</label>
+            <language>en</language>
+            <name>sn_sc_ansible_discovery</name>
+            <plural>Discoveries</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-07-20 15:58:21</sys_created_on>
+            <sys_id>0c46f5c667000300cf1514db37415a6b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Discovery</sys_name>
+            <sys_package display_value="Ansible Tower Integration" source="sn_sc_ansible">f41f2dc267000300cf1514db37415a45</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Ansible Tower Integration">f41f2dc267000300cf1514db37415a45</sys_scope>
+            <sys_update_name>sys_documentation_sn_sc_ansible_discovery__en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-07-20 15:58:21</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

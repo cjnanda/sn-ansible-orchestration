@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_sc_ansible.AnsibleIntegration</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>AnsibleIntegration</name>
+        <script><![CDATA[var AnsibleIntegration = Class.create();
+AnsibleIntegration.prototype = {
+	_integration: null,
+    initialize: function() {
+		this._integration = sn_sc_int_core.IntegrationFactory.get().getIntegration(AnsibleConstants.INTEGRATION_NAME);
+    },
+	
+	getEndpoint: function(name){
+		return this._integration.getEndpoint(name);
+	},
+
+    type: 'AnsibleIntegration'
+};
+
+AnsibleIntegration.get = function(){
+		return new AnsibleIntegration();
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-21 20:09:56</sys_created_on>
+        <sys_id>1d39335e67c00300cf1514db37415a6a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>AnsibleIntegration</sys_name>
+        <sys_package display_value="Ansible Tower Integration" source="sn_sc_ansible">f41f2dc267000300cf1514db37415a45</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Ansible Tower Integration">f41f2dc267000300cf1514db37415a45</sys_scope>
+        <sys_update_name>sys_script_include_1d39335e67c00300cf1514db37415a6a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-21 20:27:04</sys_updated_on>
+    </sys_script_include>
+</record_update>

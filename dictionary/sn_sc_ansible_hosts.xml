@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Hosts" max_length="40" name="sn_sc_ansible_hosts" type="collection">
+        <element label="Enabled" max_length="40" name="enabled" type="boolean"/>
+        <element label="Id" max_length="40" name="id" type="string"/>
+        <element label="Inventory" max_length="32" name="inventory" reference="sn_sc_ansible_inventories" type="reference"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Variables" max_length="1000" name="variables" type="string"/>
+        <index name="index">
+            <element name="inventory"/>
+        </index>
+    </element>
+</database>

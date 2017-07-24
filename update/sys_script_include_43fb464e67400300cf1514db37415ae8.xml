@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_sc_ansible.AnsibleConstants</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>AnsibleConstants</name>
+        <script><![CDATA[var AnsibleConstants = Class.create();
+
+AnsibleConstants.INTEGRATION_NAME = "Ansible Tower";
+
+AnsibleConstants.SERVER_TABLE = "sn_sc_ansible_server";
+AnsibleConstants.DISCOVERY_TABLE = "sn_sc_ansible_discovery";
+AnsibleConstants.HOST_TABLE = "sn_sc_ansible_hosts";
+AnsibleConstants.INVENTORY_TABLE = "sn_sc_ansible_inventories";
+AnsibleConstants.JOB_TABLE = "sn_sc_ansible_jobs";
+AnsibleConstants.PROJECT_TABLE = "sn_sc_ansible_projects";
+AnsibleConstants.TEMPLATE_TABLE = "sn_sc_ansible_templates";
+AnsibleConstants.DISCOVERY_JOB_TABLE = "sn_sc_ansible_discovery_job";
+
+
+AnsibleConstants.ENDPOINT_HOST = "Hosts";
+AnsibleConstants.ENDPOINT_INVENTORY = "Inventories";
+AnsibleConstants.ENDPOINT_INVENTORY_HOST = "Inventory Hosts";
+AnsibleConstants.ENDPOINT_JOB = "Jobs";
+AnsibleConstants.ENDPOINT_NOTIFICATION_TEMPLATE = "Notification Templates";
+AnsibleConstants.ENDPOINT_NOTIFICATION = "Notifications";
+AnsibleConstants.ENDPOINT_PROJECT = "Projects";
+AnsibleConstants.ENDPOINT_TEMPLATE_JOB = "Template Jobs";
+AnsibleConstants.ENDPOINT_TEMPLATE_LAUNCH = "Template Launch";
+AnsibleConstants.ENDPOINT_TEMPLATE = "Templates";
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-20 17:37:26</sys_created_on>
+        <sys_id>43fb464e67400300cf1514db37415ae8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>AnsibleConstants</sys_name>
+        <sys_package display_value="Ansible Tower Integration" source="sn_sc_ansible">f41f2dc267000300cf1514db37415a45</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Ansible Tower Integration">f41f2dc267000300cf1514db37415a45</sys_scope>
+        <sys_update_name>sys_script_include_43fb464e67400300cf1514db37415ae8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-21 20:08:48</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_sc_ansible.Server</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>Server</name>
+        <script><![CDATA[var Server = Class.create();
+Server.prototype = {
+	_serverGr: null,
+    initialize: function(serverName) {
+		this._serverGr = this._getServerRecord(serverName);
+    },
+	
+	_getServerRecord: function(serverName){
+		var servRec = new GlideRecord(AnsibleConstants.SERVER_TABLE);
+		servRec.get("name", serverName);
+		if(servRec.isValidRecord())
+			return servRec;
+		
+		return null;
+	},
+	
+	getPassword: function(){
+		return this._serverGr.password.getDecryptedValue().toString();
+	},
+	
+	getUsername: function(){
+		return this._serverGr.user.toString();
+	},
+	
+	getUri: function(){
+		return this._serverGr.host.toString();
+	},
+
+    type: 'Server'
+};
+
+Server.getServer = function(serverName){
+		return new Server(serverName);
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-20 17:31:35</sys_created_on>
+        <sys_id>9c9b824e67400300cf1514db37415afb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Server</sys_name>
+        <sys_package display_value="Ansible Tower Integration" source="sn_sc_ansible">f41f2dc267000300cf1514db37415a45</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Ansible Tower Integration">f41f2dc267000300cf1514db37415a45</sys_scope>
+        <sys_update_name>sys_script_include_9c9b824e67400300cf1514db37415afb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-21 20:35:21</sys_updated_on>
+    </sys_script_include>
+</record_update>

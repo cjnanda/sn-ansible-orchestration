@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="update_synch=true" extends="sys_metadata" label="Discovery" max_length="40" name="sn_sc_ansible_discovery" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Data Map" max_length="10000" name="data_map" type="json"/>
+        <element label="Endpoint" max_length="32" name="endpoint" reference="sn_sc_int_core_endpoint" type="reference"/>
+        <element label="Target Table" max_length="80" name="target_table" type="table_name"/>
+        <index name="index">
+            <element name="endpoint"/>
+        </index>
+    </element>
+</database>

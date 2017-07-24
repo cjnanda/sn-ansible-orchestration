@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Discovery Job" max_length="40" name="sn_sc_ansible_discovery_job" type="collection">
+        <element label="Server" max_length="32" name="server" reference="sn_sc_ansible_server" type="reference"/>
+        <index name="index">
+            <element name="server"/>
+        </index>
+    </element>
+</database>

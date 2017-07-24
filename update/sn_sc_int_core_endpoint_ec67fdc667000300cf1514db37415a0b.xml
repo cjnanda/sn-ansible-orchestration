@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sn_sc_int_core_endpoint">
+    <sn_sc_int_core_endpoint action="INSERT_OR_UPDATE">
+        <integration display_value="Ansible Tower">d29f610667000300cf1514db37415ae3</integration>
+        <name>Inventory Hosts</name>
+        <sys_class_name>sn_sc_int_core_endpoint</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-20 16:03:53</sys_created_on>
+        <sys_id>ec67fdc667000300cf1514db37415a0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Inventory Hosts</sys_name>
+        <sys_package display_value="Ansible Tower Integration" source="sn_sc_ansible">f41f2dc267000300cf1514db37415a45</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Ansible Tower Integration">f41f2dc267000300cf1514db37415a45</sys_scope>
+        <sys_update_name>sn_sc_int_core_endpoint_ec67fdc667000300cf1514db37415a0b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-20 16:03:53</sys_updated_on>
+        <uri>/api/v1/inventories/{id}/hosts/</uri>
+    </sn_sc_int_core_endpoint>
+</record_update>

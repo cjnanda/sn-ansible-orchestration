@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Jobs" max_length="40" name="sn_sc_ansible_jobs" type="collection">
+        <element label="Id" max_length="40" name="id" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Template Id" max_length="40" name="template_id" type="string"/>
+    </element>
+</database>

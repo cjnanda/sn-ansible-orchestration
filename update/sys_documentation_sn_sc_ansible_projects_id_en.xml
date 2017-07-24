@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="id" label="Id" language="en" table="sn_sc_ansible_projects">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>id</element>
+            <help/>
+            <hint/>
+            <label>Id</label>
+            <language>en</language>
+            <name>sn_sc_ansible_projects</name>
+            <plural>Ids</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-07-24 17:18:08</sys_created_on>
+            <sys_id>7fde221767000300cf1514db37415ace</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Id</sys_name>
+            <sys_package display_value="Ansible Tower Integration" source="sn_sc_ansible">f41f2dc267000300cf1514db37415a45</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Ansible Tower Integration">f41f2dc267000300cf1514db37415a45</sys_scope>
+            <sys_update_name>sys_documentation_sn_sc_ansible_projects_id_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2017-07-24 17:18:08</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

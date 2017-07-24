@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Servers" max_length="40" name="sn_sc_ansible_server" type="collection">
+        <element label="Host" max_length="100" name="host" type="string"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="Password" max_length="255" name="password" type="password2"/>
+        <element label="User" max_length="100" name="user" type="string"/>
+    </element>
+</database>

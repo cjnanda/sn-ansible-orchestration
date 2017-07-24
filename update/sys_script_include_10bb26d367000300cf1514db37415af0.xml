@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_sc_ansible.ImportUtil</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>ImportUtil</name>
+        <script><![CDATA[var ImportUtil = Class.create();
+ImportUtil.prototype = {
+    initialize: function() {
+    },
+	
+	importToTable: function(table, data, dataMap, uniqueColumn){
+		if(uniqueColumn === undefined)
+			uniqueColumn = "id";
+		
+		for(var i=0; i < data.length; i++){
+			var rec = data[i];
+			var gr = new GlideRecord(table);
+			gr.get(dataMap[uniqueColumn], rec[uniqueColumn])
+			if(!gr.isValidRecord())
+				gr.initialize();
+			
+			for(var prop in dataMap)
+				gr.setValue(dataMap[prop], rec[prop]);
+			
+			gr.update();
+		}
+	},
+
+    type: 'ImportUtil'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-24 17:07:40</sys_created_on>
+        <sys_id>10bb26d367000300cf1514db37415af0</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ImportUtil</sys_name>
+        <sys_package display_value="Ansible Tower Integration" source="sn_sc_ansible">f41f2dc267000300cf1514db37415a45</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Ansible Tower Integration">f41f2dc267000300cf1514db37415a45</sys_scope>
+        <sys_update_name>sys_script_include_10bb26d367000300cf1514db37415af0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-24 17:26:47</sys_updated_on>
+    </sys_script_include>
+</record_update>
