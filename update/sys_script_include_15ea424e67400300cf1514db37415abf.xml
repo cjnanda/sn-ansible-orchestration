@@ -28,6 +28,10 @@ AMessage.prototype = {
 		gs.debug("Server Url: " + this._serverUrl);
     },
 	
+	setHttpMethod: function(method){
+			this._httpMethod = method;
+	},
+	
 	setPathParameter: function(name, val){
 		this._pathParams[name] = {name: name, value: val};
 	},
@@ -88,7 +92,7 @@ AMessage.prototype = {
 		this._restMessage.setStringParameter("sn_internal_host", this._serverUrl);
 		
 		for(var prop in this._pathParams){
-			this._restMessage.SetStringParameter(prop, this._pathParams[prop].value);
+			this._restMessage.setStringParameter(prop, this._pathParams[prop].value);
 		}
 	},
 	
@@ -111,13 +115,13 @@ AMessage.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-20 19:37:45</sys_created_on>
         <sys_id>15ea424e67400300cf1514db37415abf</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>AMessage</sys_name>
         <sys_package display_value="Ansible Tower Integration" source="sn_sc_ansible">f41f2dc267000300cf1514db37415a45</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Ansible Tower Integration">f41f2dc267000300cf1514db37415a45</sys_scope>
         <sys_update_name>sys_script_include_15ea424e67400300cf1514db37415abf</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-07-21 20:37:14</sys_updated_on>
+        <sys_updated_on>2017-07-24 19:05:36</sys_updated_on>
     </sys_script_include>
 </record_update>

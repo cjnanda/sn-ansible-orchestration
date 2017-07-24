@@ -7,5 +7,9 @@
         <element label="Name" max_length="100" name="name" type="string"/>
         <element label="Playbook" max_length="1000" name="playbook" type="string"/>
         <element label="Project Id" max_length="40" name="project_id" type="string"/>
+        <element label="Server Ref" max_length="32" name="server_ref" reference="sn_sc_ansible_server" type="reference"/>
+        <index name="index">
+            <element name="server_ref"/>
+        </index>
     </element>
 </database>

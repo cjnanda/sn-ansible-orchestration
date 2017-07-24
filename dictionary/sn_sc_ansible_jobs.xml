@@ -3,6 +3,10 @@
     <element label="Jobs" max_length="40" name="sn_sc_ansible_jobs" type="collection">
         <element label="Id" max_length="40" name="id" type="string"/>
         <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Server Ref" max_length="32" name="server_ref" reference="sn_sc_ansible_server" type="reference"/>
         <element label="Template Id" max_length="40" name="template_id" type="string"/>
+        <index name="index">
+            <element name="server_ref"/>
+        </index>
     </element>
 </database>

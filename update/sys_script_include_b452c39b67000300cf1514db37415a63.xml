@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>sn_sc_ansible.JobLauncher</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>JobLauncher</name>
+        <script><![CDATA[var JobLauncher = Class.create();
+JobLauncher.prototype = {
+	_templateRecord: null,
+    initialize: function(templateRecord) {
+		this._templateRecord= templateRecord;
+    },
+	
+	run: function(){
+		//get the id
+		var id = this._templateRecord.id.toString();
+		var server = this._getServer();
+		var integration = integration = AnsibleIntegration.get();
+		var ep = this._getEndpoint(integration);
+		var mess = new AMessage(server);
+		mess.setHttpMethod("post");
+		mess.setResource(ep.uri);
+		mess.setPathParameter("id", id);
+		var result = mess.execute();
+		if(result.success){
+			gs.debug("Import Success.");
+		
+			gs.info(JSON.stringify(result));
+		}else
+			throw 'Failed to import.';
+	},
+	_getServer: function(){
+		return new Server(this._templateRecord.server_ref.name.toString());
+	},
+	
+	_getEndpoint: function(integration){
+		var ep = integration.getEndpoint(AnsibleConstants.ENDPOINT_TEMPLATE_LAUNCH);
+		if(ep == null)
+			throw '';
+		
+		return ep;
+	},
+
+    type: 'JobLauncher'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-24 18:51:58</sys_created_on>
+        <sys_id>b452c39b67000300cf1514db37415a63</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>JobLauncher</sys_name>
+        <sys_package display_value="Ansible Tower Integration" source="sn_sc_ansible">f41f2dc267000300cf1514db37415a45</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Ansible Tower Integration">f41f2dc267000300cf1514db37415a45</sys_scope>
+        <sys_update_name>sys_script_include_b452c39b67000300cf1514db37415a63</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-24 19:06:13</sys_updated_on>
+    </sys_script_include>
+</record_update>
