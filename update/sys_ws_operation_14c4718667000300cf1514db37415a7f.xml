@@ -10,8 +10,28 @@
         <name>Job</name>
         <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
 
+	var data = request.body.data;
     // implement resource here
-
+	var gr = new GlideRecord(AnsibleConstants.JOB_TABLE);
+	gr.get("id", data.id.toString());
+	
+	if(!gr.isValidRecord()){
+		gr.initialize();
+		gr.id = data.id.toString();
+	}
+		
+	
+	gr.status = data.status.toString();
+	gr.started = data.started.toString();
+	gr.finished = data.finished.toString();
+	gr.hosts = JSON.stringify(data.hosts);
+	gr.name = data.name.toString();
+	gr.url = data.url.toString();
+	gr.complete_request = JSON.stringify(data);
+	gr.update();
+	
+	
+	return {};
 })(request, response);]]></operation_script>
         <operation_uri>/api/sn_sc_ansible/notification/jobs</operation_uri>
         <produces>application/json,application/xml,text/xml</produces>
@@ -19,20 +39,20 @@
         <relative_path>/jobs</relative_path>
         <request_example/>
         <requires_acl_authorization>false</requires_acl_authorization>
-        <requires_authentication>true</requires_authentication>
+        <requires_authentication>false</requires_authentication>
         <short_description/>
         <sys_class_name>sys_ws_operation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-20 15:52:06</sys_created_on>
         <sys_id>14c4718667000300cf1514db37415a7f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Job</sys_name>
         <sys_package display_value="Ansible Tower Integration" source="sn_sc_ansible">f41f2dc267000300cf1514db37415a45</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ansible Tower Integration">f41f2dc267000300cf1514db37415a45</sys_scope>
         <sys_update_name>sys_ws_operation_14c4718667000300cf1514db37415a7f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-07-20 15:52:06</sys_updated_on>
+        <sys_updated_on>2017-07-24 20:12:23</sys_updated_on>
         <web_service_definition display_value="Notification">b0a4318667000300cf1514db37415acd</web_service_definition>
         <web_service_version/>
     </sys_ws_operation>

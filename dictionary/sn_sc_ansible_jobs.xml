@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Jobs" max_length="40" name="sn_sc_ansible_jobs" type="collection">
+        <element label="Complete Request" max_length="100000" name="complete_request" type="json"/>
+        <element label="Create Result" max_length="100000" name="create_result" type="json"/>
+        <element label="Credential" max_length="40" name="credential" type="string"/>
+        <element label="Finished" max_length="40" name="finished" type="string"/>
+        <element label="Hosts" max_length="1000" name="hosts" type="json"/>
         <element label="Id" max_length="40" name="id" type="string"/>
         <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Output" max_length="100000" name="output" type="string"/>
         <element label="Server Ref" max_length="32" name="server_ref" reference="sn_sc_ansible_server" type="reference"/>
+        <element label="Started" max_length="40" name="started" type="string"/>
+        <element label="Status" max_length="100" name="status" type="string"/>
         <element label="Template Id" max_length="40" name="template_id" type="string"/>
+        <element label="Url" max_length="100" name="url" type="url"/>
         <index name="index">
             <element name="server_ref"/>
         </index>
