@@ -8,7 +8,7 @@
         <element label="Hosts" max_length="1000" name="hosts" type="json"/>
         <element label="Id" max_length="40" name="id" type="string"/>
         <element label="Name" max_length="40" name="name" type="string"/>
-        <element label="Output" max_length="100000" name="output" type="string"/>
+        <element label="Output" max_length="100000" name="output" type="html"/>
         <element label="Server Ref" max_length="32" name="server_ref" reference="sn_sc_ansible_server" type="reference"/>
         <element label="Started" max_length="40" name="started" type="string"/>
         <element label="Status" max_length="100" name="status" type="string"/>
