@@ -4,6 +4,7 @@
         <element label="Enabled" max_length="40" name="enabled" type="boolean"/>
         <element label="Id" max_length="40" name="id" type="string"/>
         <element label="Inventory" max_length="32" name="inventory" reference="sn_sc_ansible_inventories" type="reference"/>
+        <element label="Inventory Id" max_length="40" name="inventory_id" type="string"/>
         <element label="Name" max_length="40" name="name" type="string"/>
         <element label="Server Ref" max_length="32" name="server_ref" reference="sn_sc_ansible_server" type="reference"/>
         <element label="Variables" max_length="1000" name="variables" type="string"/>

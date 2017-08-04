@@ -4,92 +4,32 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="sn_sc_ansible_projects" element="NULL" name="sn_sc_ansible_projects" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92af2a1767000300cf1514db37415a7c</list_id>
+            <list_id display_value="sn_sc_ansible_projects" element="NULL" name="sn_sc_ansible_projects" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">16fd6abe67100300b8cc14db37415aeb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-24 17:21:35</sys_created_on>
-            <sys_id>1aaf2a1767000300cf1514db37415a7c</sys_id>
+            <sys_created_on>2017-08-04 14:12:56</sys_created_on>
+            <sys_id>9efd6abe67100300b8cc14db37415aeb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-24 17:21:35</sys_updated_on>
+            <sys_updated_on>2017-08-04 14:12:56</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>id</element>
-            <list_id display_value="sn_sc_ansible_projects" element="NULL" name="sn_sc_ansible_projects" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92af2a1767000300cf1514db37415a7c</list_id>
+            <list_id display_value="sn_sc_ansible_projects" element="NULL" name="sn_sc_ansible_projects" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">16fd6abe67100300b8cc14db37415aeb</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-24 17:21:35</sys_created_on>
-            <sys_id>9aaf2a1767000300cf1514db37415a7c</sys_id>
+            <sys_created_on>2017-08-04 14:12:56</sys_created_on>
+            <sys_id>16fd6abe67100300b8cc14db37415aec</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-24 17:21:35</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>description</element>
-            <list_id display_value="sn_sc_ansible_projects" element="NULL" name="sn_sc_ansible_projects" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92af2a1767000300cf1514db37415a7c</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>2</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-24 17:21:35</sys_created_on>
-            <sys_id>5eaf6a1767000300cf1514db37415a9a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-24 17:21:35</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>enabled</element>
-            <list_id display_value="sn_sc_ansible_projects" element="NULL" name="sn_sc_ansible_projects" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92af2a1767000300cf1514db37415a7c</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>3</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-24 17:21:35</sys_created_on>
-            <sys_id>deaf6a1767000300cf1514db37415a9a</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-24 17:21:35</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>inventory</element>
-            <list_id display_value="sn_sc_ansible_projects" element="NULL" name="sn_sc_ansible_projects" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92af2a1767000300cf1514db37415a7c</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>4</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-24 17:21:35</sys_created_on>
-            <sys_id>52af6a1767000300cf1514db37415a9b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-24 17:21:35</sys_updated_on>
-        </sys_ui_list_element>
-        <sys_ui_list_element action="INSERT_OR_UPDATE">
-            <average_value>false</average_value>
-            <element>variables</element>
-            <list_id display_value="sn_sc_ansible_projects" element="NULL" name="sn_sc_ansible_projects" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">92af2a1767000300cf1514db37415a7c</list_id>
-            <max_value>false</max_value>
-            <min_value>false</min_value>
-            <position>5</position>
-            <sum>false</sum>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-24 17:21:35</sys_created_on>
-            <sys_id>d2af6a1767000300cf1514db37415a9b</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-24 17:21:35</sys_updated_on>
+            <sys_updated_on>2017-08-04 14:12:56</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -103,10 +43,10 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-07-24 17:21:35</sys_created_on>
+            <sys_created_on>2017-08-04 14:12:56</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>92af2a1767000300cf1514db37415a7c</sys_id>
+            <sys_id>16fd6abe67100300b8cc14db37415aeb</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>sn_sc_ansible_projects</sys_name>
             <sys_package display_value="Ansible Tower Integration" source="sn_sc_ansible">f41f2dc267000300cf1514db37415a45</sys_package>
@@ -114,7 +54,7 @@
             <sys_scope display_value="Ansible Tower Integration">f41f2dc267000300cf1514db37415a45</sys_scope>
             <sys_update_name>sys_ui_list_sn_sc_ansible_projects_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-07-24 17:21:35</sys_updated_on>
+            <sys_updated_on>2017-08-04 14:12:56</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
