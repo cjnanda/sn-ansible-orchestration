@@ -3,19 +3,19 @@
     <sn_sc_ansible_discovery action="INSERT_OR_UPDATE">
         <active>true</active>
         <data_map>{"id": "id", "name": "name","description": "description"}</data_map>
-        <endpoint display_value="Inventories">2553794667000300cf1514db37415ad0</endpoint>
+        <endpoint display_value="Organization List">0226cb8b67010300b8cc14db37415a07</endpoint>
         <sys_class_name>sn_sc_ansible_discovery</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-07-20 15:59:18</sys_created_on>
-        <sys_id>2f6679c667000300cf1514db37415a82</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_created_on>2017-09-11 17:24:49</sys_created_on>
+        <sys_id>eb46cb8b67010300b8cc14db37415a86</sys_id>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Ansible Tower Integration" source="sn_sc_ansible">f41f2dc267000300cf1514db37415a45</sys_package>
         <sys_policy/>
         <sys_scope display_value="Ansible Tower Integration">f41f2dc267000300cf1514db37415a45</sys_scope>
-        <sys_update_name>sn_sc_ansible_discovery_2f6679c667000300cf1514db37415a82</sys_update_name>
+        <sys_update_name>sn_sc_ansible_discovery_eb46cb8b67010300b8cc14db37415a86</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-09-11 15:43:58</sys_updated_on>
-        <target_table>sn_sc_ansible_inventories</target_table>
+        <sys_updated_on>2017-09-11 17:24:55</sys_updated_on>
+        <target_table>sn_sc_ansible_organization</target_table>
     </sn_sc_ansible_discovery>
 </record_update>

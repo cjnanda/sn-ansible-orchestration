@@ -20,13 +20,15 @@ ImportUtil.prototype = {
 		
 		for(var i=0; i < data.length; i++){
 			var rec = data[i];
+			gs.info(JSON.stringify(rec));
+			
 			var gr = new GlideRecord(table);
-			gr.get(dataMap[uniqueColumn], rec[uniqueColumn])
+			gr.get(dataMap[uniqueColumn.toString().trim()], rec[uniqueColumn.toString().trim()])
 			if(!gr.isValidRecord())
 				gr.initialize();
 			
 			for(var prop in dataMap)
-				gr.setValue(dataMap[prop], rec[prop]);
+				gr.setValue(dataMap[prop.toString().trim()], rec[prop.toString().trim()]);
 			
 			gr.setValue("server_ref", this._server.getId());
 			gr.update();
@@ -39,13 +41,13 @@ ImportUtil.prototype = {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-07-24 17:07:40</sys_created_on>
         <sys_id>10bb26d367000300cf1514db37415af0</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>ImportUtil</sys_name>
         <sys_package display_value="Ansible Tower Integration" source="sn_sc_ansible">f41f2dc267000300cf1514db37415a45</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Ansible Tower Integration">f41f2dc267000300cf1514db37415a45</sys_scope>
         <sys_update_name>sys_script_include_10bb26d367000300cf1514db37415af0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-07-24 18:45:31</sys_updated_on>
+        <sys_updated_on>2017-09-11 15:45:34</sys_updated_on>
     </sys_script_include>
 </record_update>

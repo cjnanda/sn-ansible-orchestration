@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element label="Templates" max_length="40" name="sn_sc_ansible_templates" type="collection">
+        <element label="Machine Credential" max_length="32" name="credential" reference="sn_sc_ansible_credential" type="reference"/>
+        <element label="Credential Id" max_length="40" name="credential_id" type="string"/>
         <element label="Description" max_length="100" name="description" type="string"/>
         <element label="Id" max_length="100" name="id" type="string"/>
+        <element label="Inventory" max_length="32" name="inventory" reference="sn_sc_ansible_inventories" type="reference"/>
         <element label="Inventory Id" max_length="40" name="inventory_id" type="string"/>
+        <element choice="1" label="Job Type" max_length="40" name="job_type" type="choice">
+            <choice/>
+        </element>
         <element label="Name" max_length="100" name="name" type="string"/>
         <element label="Playbook" max_length="1000" name="playbook" type="string"/>
+        <element label="Project" max_length="32" name="project" reference="sn_sc_ansible_projects" type="reference"/>
         <element label="Project Id" max_length="40" name="project_id" type="string"/>
         <element label="Server Ref" max_length="32" name="server_ref" reference="sn_sc_ansible_server" type="reference"/>
         <index name="index">
+            <element name="credential"/>
+        </index>
+        <index name="index2">
             <element name="server_ref"/>
+        </index>
+        <index name="index3">
+            <element name="project"/>
+        </index>
+        <index name="index4">
+            <element name="inventory"/>
         </index>
     </element>
 </database>
